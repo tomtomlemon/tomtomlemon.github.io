@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Lato:ital,wght@1,100&display=swap');
+
+body{
+    font-family:'Andada Pro', serif;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    color: indianred;
+}
+/* ******************************************* NAVBAR ********************************************* */
+nav {
+    overflow: hidden;
+    background-color: #ffcccc;
+    position: fixed; 
+    /*  ca empèche le menu de bouger */
+    width: 100%;
+    opacity : 0.9; 
+}
+header li {
+    /* header puis li, envoie au li qui sont sous le header */
+    float: right;
+    font-size: 1.2em
+    /* le em plutot que la pixel s"adapte à la taille de l'écran */
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    /* le premier chiffre veut dire en haut et en bas le 2eme à droit et à gauche */
+}
+#logo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    float: left;
+}
+/* ********************** IMAGE PRINCIPALE********************** */
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(media/Ile\ aux\ cerfs.jpg) no-repeat 50% 50%;
+    /* 50 50 ca veut dire que l'image est centrée */
+    background-size: cover;
+    /* permet que l'image couvre tout, même quand on l'agrandie */
+    height: 799px;
+    padding: 1px 2%;
+}
+h1 {
+    font-family: 'Andada Pro', serif;
+    text-align: center;
+    color : antiquewhite;
+    font-size: 6em;
+    /* 1 em c'est la taille normal, donc 1 em c'est 6 fois plus gros */
+    margin-top: 140px;
+    text-shadow: 1px 3px 2px black;
+    padding: 1px 2%;
+}
+#PremierTrait {
+    height: 3px;
+    width: 45%;
+    margin: -3px auto;
+    /* le -3 donne haut et bas et auto pour gauche et droite */
+    background-color: antiquewhite ;
+    box-shadow: 1px 3px 2px black;
+    padding: 1px 2%;
+}
+h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+    /* pour les ombres, go sur text shadow generator */
+}
+/* ******************** PRENSENTATION *************************************** */
+#presentation {
+    background-color: #fffae1;
+    padding:  0 px 0px 100 px 0
+    /* si on est met 4 c'est en haut a droite en bas et à gauche */
+}
+#texteintro {
+    padding: 0px 20%; 
+}
+#prestation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagesprestation h4{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+font-size: 1.8em;
+margin: 15px;
+font-size: 300;
+}
+
+.imagesprestation h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-size: 300;
+    }
+
+.imagesprestation h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-size: 300;
+    }
+.imagesprestation img {
+    border-radius: 10px;
+    /* site internet pour trouver comment arondir les angles : border radius  */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 3px 4px 5px 4px rgba(0,0,0,0.7);
+}
+.imagesprestation img:hover {
+    opacity:0,5;
+    transform: scale(1.05);
+    transition: 0,6 ease-in-out;
+}
+/* ********************** TOURISME ***************/
+
+#quipeuxacheter li img {
+    max-width: 100%;
+    height: auto;
+}
+#quipeuxachter p {
+    height: 45px;
+    width: 235px;
+    background-color: rosybrown;
+    float: right;
+    margin: 50px -180px 0 0;
+}
+/* *******************footer ******************************* */
+
+footer{
+    background-color: #524A3A;
+    color: #fffae1;
+    padding: 20px 0 10 px 0;
+    text-align: center;
+}
+form{
+    margin: 0 auto ;
+    /* ca veut dire pas de marge et tout est centré */
+    max-width: 900px;
+}
+input, textarea, button{
+    border: none;
+    width: 55%;
+    /* width: c'est la largeur de l'image */
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1,2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 8px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    font-size: 1,5em;
+    background-color: antiquewhite;
+}
+button:hover {
+background-color: indianred;
+color: lavender;
+cursor: pointer;
+transition: 0,3s ease-in-out;
+}
+/* hover c'est l'effet quand on survol */
+#deuxiemetrait {
+    height: 1px;
+    width: 75%;
+    background-color: antiquewhite;
+    margin: 60px auto;
+}
+#copyrighticon {
+    display: flex;
+    margin-bottom: 20px;
+}
+#copyright{
+    width: 50%;
+    text-align: center;
+    color: antiquewhite;
+    padding: 0 0 10px 0 ;
+}
